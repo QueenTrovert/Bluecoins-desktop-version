@@ -8,19 +8,21 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
+
 const useStyles = makeStyles({
   table: {
     minWidth: 50,
+  
   },
 });
 
-function createData(name, amount, account, ) {
-  return { name, amount, account};
+function createData(name, amount) {
+  return { name, amount};
 }
 
 const rows = [
-  createData('Gocery', 159, 'BPI'),
-  createData('Electicity', 499, 'BDO'),
+  createData('Grocery', 159),
+  createData('Electicity', 499),
 ];
 
 export default function DenseTable() {
@@ -33,7 +35,6 @@ export default function DenseTable() {
           <TableRow>
             <TableCell>Transaction</TableCell>
             <TableCell align="right">Amount</TableCell>
-            <TableCell align="right">Account</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -43,7 +44,6 @@ export default function DenseTable() {
                 {row.name}
               </TableCell>
               <TableCell align="right">{row.amount}</TableCell>
-              <TableCell align="right">{row.account}</TableCell>
             </TableRow>
           ))}
         </TableBody>

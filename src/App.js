@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import AppBar from './Components/AppBar.js';
 import MainTab from './Components/MainTab.js'
