@@ -8,6 +8,10 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
@@ -48,14 +52,37 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <div>
+        <h2><b>Bluecoins</b></h2>
+        <p><a href="www.bluecoinsapp.com">www.bluecoinsapp.com</a></p>
+      </div>
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {['Main Dashboard'].map((text) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon><DashboardIcon /></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+        {['Calendar'].map((text) => (
+          <ListItem button key={text}>
+            <ListItemIcon><DateRangeIcon/></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+        {['Categories & Budget'].map((text) => (
+          <ListItem button key={text}>
+            <ListItemIcon><ShoppingBasketIcon/></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+        {['Acount Setup'].map((text) => (
+          <ListItem button key={text}>
+            <ListItemIcon><AccountBalanceIcon/></ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
+      
       <Divider />
       <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
