@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/Bluecoins-desktop-version/static/css/main.82e71c24.chunk.css",
-    "main.js": "/Bluecoins-desktop-version/static/js/main.1ca28cc1.chunk.js",
-    "main.js.map": "/Bluecoins-desktop-version/static/js/main.1ca28cc1.chunk.js.map",
-    "runtime-main.js": "/Bluecoins-desktop-version/static/js/runtime-main.d3133f02.js",
-    "runtime-main.js.map": "/Bluecoins-desktop-version/static/js/runtime-main.d3133f02.js.map",
-    "static/js/2.b47aaced.chunk.js": "/Bluecoins-desktop-version/static/js/2.b47aaced.chunk.js",
-    "static/js/2.b47aaced.chunk.js.map": "/Bluecoins-desktop-version/static/js/2.b47aaced.chunk.js.map",
-    "static/js/3.180d9711.chunk.js": "/Bluecoins-desktop-version/static/js/3.180d9711.chunk.js",
-    "static/js/3.180d9711.chunk.js.map": "/Bluecoins-desktop-version/static/js/3.180d9711.chunk.js.map",
+    "main.css": "/Bluecoins-desktop-version/static/css/main.50d03591.chunk.css",
+    "main.js": "/Bluecoins-desktop-version/static/js/main.11841826.chunk.js",
+    "main.js.map": "/Bluecoins-desktop-version/static/js/main.11841826.chunk.js.map",
+    "runtime-main.js": "/Bluecoins-desktop-version/static/js/runtime-main.3e73e6d8.js",
+    "runtime-main.js.map": "/Bluecoins-desktop-version/static/js/runtime-main.3e73e6d8.js.map",
+    "static/js/2.00153893.chunk.js": "/Bluecoins-desktop-version/static/js/2.00153893.chunk.js",
+    "static/js/2.00153893.chunk.js.map": "/Bluecoins-desktop-version/static/js/2.00153893.chunk.js.map",
+    "static/js/3.33fdad4c.chunk.js": "/Bluecoins-desktop-version/static/js/3.33fdad4c.chunk.js",
+    "static/js/3.33fdad4c.chunk.js.map": "/Bluecoins-desktop-version/static/js/3.33fdad4c.chunk.js.map",
     "index.html": "/Bluecoins-desktop-version/index.html",
-    "static/css/main.82e71c24.chunk.css.map": "/Bluecoins-desktop-version/static/css/main.82e71c24.chunk.css.map",
-    "static/js/2.b47aaced.chunk.js.LICENSE.txt": "/Bluecoins-desktop-version/static/js/2.b47aaced.chunk.js.LICENSE.txt",
-    "static/media/logo.103b5fa1.svg": "/Bluecoins-desktop-version/static/media/logo.103b5fa1.svg"
+    "static/css/main.50d03591.chunk.css.map": "/Bluecoins-desktop-version/static/css/main.50d03591.chunk.css.map",
+    "static/js/2.00153893.chunk.js.LICENSE.txt": "/Bluecoins-desktop-version/static/js/2.00153893.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3133f02.js",
-    "static/js/2.b47aaced.chunk.js",
-    "static/css/main.82e71c24.chunk.css",
-    "static/js/main.1ca28cc1.chunk.js"
+    "static/js/runtime-main.3e73e6d8.js",
+    "static/js/2.00153893.chunk.js",
+    "static/css/main.50d03591.chunk.css",
+    "static/js/main.11841826.chunk.js"
   ]
 }
