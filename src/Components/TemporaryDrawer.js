@@ -12,9 +12,15 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import DeleteIcon from '@material-ui/icons/Delete';
+import SettingsIcon from '@material-ui/icons/Settings';
+import SyncIcon from '@material-ui/icons/Sync';
+import DriveEtaIcon from '@material-ui/icons/DriveEta';
+import PeopleIcon from '@material-ui/icons/People';
+import MessageIcon from '@material-ui/icons/Message';
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles({
@@ -75,9 +81,27 @@ export default function SwipeableTemporaryDrawer() {
             <ListItemText primary={text} />
           </ListItem>
         ))}
-        {['Acount Setup'].map((text) => (
+        {['Account Setup'].map((text) => (
           <ListItem button key={text}>
             <ListItemIcon><AccountBalanceIcon/></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+        {['Labels'].map((text) => (
+          <ListItem button key={text}>
+            <ListItemIcon><LocalOfferIcon/></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+        {['Trash'].map((text) => (
+          <ListItem button key={text}>
+            <ListItemIcon><DeleteIcon/></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+        {['Settings'].map((text) => (
+          <ListItem button key={text}>
+            <ListItemIcon><SettingsIcon/></ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
@@ -85,13 +109,29 @@ export default function SwipeableTemporaryDrawer() {
       
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {['QuickSync', 'Travel Mode'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon>{index % 2 === 0 ? <SyncIcon /> : <DriveEtaIcon />}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
+      <Divider/>
+      <List>
+        {['Tell A Friend', 'Send Feedback'].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemIcon>{index % 2 === 0 ? <PeopleIcon /> : <MessageIcon />}</ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+      </List>
+      <Divider/>
+      {['Support Development'].map((text) => (
+          <ListItem button key={text}>
+            <ListItemIcon><InsertEmoticonIcon/></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
     </div>
   );
 
